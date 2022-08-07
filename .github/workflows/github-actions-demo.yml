@@ -21,3 +21,10 @@ jobs:
     steps:
       - run: echo "SUCCESS"
       
+  job_second:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "maybe the seconed aton LOL"
+      
+  
+      
