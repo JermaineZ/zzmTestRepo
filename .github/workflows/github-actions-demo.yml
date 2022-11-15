@@ -20,6 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "SUCCESS"
+     
+  job_third:
+    needs: job_zzmtest
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "maybe the seconed aton LOL"
       
   job_second:
     needs: job_zzmtest
