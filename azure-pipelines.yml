@@ -7,6 +7,8 @@
 trigger:
 - master
 
+name: $(test)
+
 pool:
   vmImage: ubuntu-latest
 
