@@ -14,6 +14,31 @@ on:
         default: 'john-doe'
         required: true
         type: string
+        
+      test1:
+        description: 'A username passed from the caller workflow'
+        required: true
+        type: environment
+        
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning' 
+        type: choice
+        options:
+        - info
+        - warning
+        - debug 
+        
+      logLevel2:
+        description: 'Log level'
+        required: true
+        default: 'warning' 
+        type: multichoice
+        options:
+        - info
+        - warning
+        - debug 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
