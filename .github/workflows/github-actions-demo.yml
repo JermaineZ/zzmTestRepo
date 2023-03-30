@@ -20,6 +20,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       
   job_zzmtest:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - run: echo "SUCCESS"
