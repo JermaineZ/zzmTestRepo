@@ -19,7 +19,7 @@ jobs:
     
         
   job2:
-   if: true
+   if: ${{ always() }}
    runs-on: ubuntu-latest
    steps:
       - name: Run a one-line script
