@@ -19,6 +19,7 @@ jobs:
     
         
   job2:
+   if: true
    runs-on: ubuntu-latest
    steps:
       - name: Run a one-line script
